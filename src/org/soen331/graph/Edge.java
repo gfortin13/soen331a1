@@ -1,3 +1,7 @@
+/*
+Guillaume Fortin - 6325300
+Emmanuel Tsapekis - 5849004
+*/
 package org.soen331.graph;
 
 public class Edge<T> {
