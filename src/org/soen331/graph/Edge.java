@@ -1,11 +1,13 @@
 package org.soen331.graph;
 
-public class Edge {
+public class Edge<T> {
 	private Vertex from, to;
+	private T element;
 
-	public Edge(Vertex from, Vertex to) {
+	public Edge(Vertex from, Vertex to, T element) {
 		this.from = from;
 		this.to = to;
+		this.element = element;
 	}
 
 	public Vertex getFrom() {
@@ -22,5 +24,13 @@ public class Edge {
 
 	public void setTo(Vertex to) {
 		this.to = to;
+	}
+	
+	public T getElement() {
+		return element;
+	}
+
+	public void setElement(T element) {
+		this.element = element;
 	}
 }
